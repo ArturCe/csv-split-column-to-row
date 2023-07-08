@@ -12,7 +12,7 @@ public class Writer {
 
     public static void write(List<String> inputList, String fileName) {
 
-        setFileName(fileName);
+        setOutputFilePath(fileName);
 
         for (String string : inputList) {
             try {
@@ -34,11 +34,11 @@ public class Writer {
         }
     }
 
-    public static void setFileName(String fileName) {
-        outputPath = System.getProperty("user.dir") + "\\" + fileName + "_column_to_row" + ".txt";
+    public static void setOutputFilePath(String fileName) {
+        outputPath = System.getProperty("user.dir") + "\\" + fileName + "_column_to_row.txt";
     }
 
-    public static String getFileName() {
+    public static String getOutputFilePath() {
         return outputPath;
     }
 }

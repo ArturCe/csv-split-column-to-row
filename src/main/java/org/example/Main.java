@@ -26,7 +26,7 @@ public class Main {
 
             List<String> result = Rebuilder.getResult();
             Writer.write(result, fileName.replace(".csv", ""));
-            System.out.println("\nZapisano plik " + Writer.getFileName());
+            System.out.println("\nZapisano plik " + Writer.getOutputFilePath());
 
         } else {
             System.out.println("Brak plikow do procesowania w lokalizacji " + System.getProperty(DIRECTORY));
