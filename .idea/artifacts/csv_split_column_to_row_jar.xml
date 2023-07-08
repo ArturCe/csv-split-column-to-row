@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="csv-split-column-to-row:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/csv_split_column_to_row_jar</output-path>
+    <root id="archive" name="csv-split-column-to-row.jar">
+      <element id="module-output" name="csv-split-column-to-row" />
+    </root>
+  </artifact>
+</component>
