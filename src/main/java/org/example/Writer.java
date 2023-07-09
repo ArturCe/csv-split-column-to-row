@@ -14,12 +14,13 @@ public class Writer {
 
         setOutputFilePath(fileName);
 
-        for (String string : inputList) {
             try {
-                FileWriter fileWriter = new FileWriter(outputPath, true);
+                FileWriter fileWriter = new FileWriter(outputPath, false);
                 bufferedWriter = new BufferedWriter(fileWriter);
-                bufferedWriter.write(string);
-                bufferedWriter.newLine();
+                for (String string : inputList) {
+                    bufferedWriter.write(string);
+                    bufferedWriter.newLine();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
@@ -31,7 +32,6 @@ public class Writer {
                     }
                 }
             }
-        }
     }
 
     public static void setOutputFilePath(String fileName) {
